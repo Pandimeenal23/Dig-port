@@ -1,0 +1,340 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    transition: all.3s ease;
+}
+.profile{
+    width: 100%;
+    height:100vh;
+    background-image: url('img/i2.png');
+    background-position:right;
+    background-size:auto;
+    background-repeat:no-repeat;
+    background-size:contain;
+    
+}
+
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 180px;
+
+}
+
+.nav .logo{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.nav.logo h1{
+    z-index:1;
+}
+
+.nav .logo img{
+    position: relative;
+    left: 60px;
+    top: 5px;
+}
+
+.shap{
+    animation: rotat 2s infinite linear;
+}
+
+@keyframes rotat{
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+            transform: rotate(360deg);
+    }
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    margin: 0px 20px;
+}
+
+.nav ul li a:hover{
+    color: rgb(255, 0, 157);
+
+}
+
+.nav ul li .active{
+    color:#1221c1c4;
+
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+}
+
+.content .left img{
+    width:400px;
+    margin-right: 70px;
+
+}
+
+.content .right h1{
+    font-size:70px;
+
+}
+
+.content .right button{
+    margin-top: 20px;
+    padding:13px 36px;
+    background: #8991eec4;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+
+.content .right button:hover{
+    background:#530e48c4;
+}
+
+.social{
+    position:absolute;
+    top:50%;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Style the Sticky icons on web page */ 
+.stickyicon-list { 
+position:absolute; 
+top: 550px; 
+display:flex;
+right:30px;
+transform: translateY(-50%);           
+}       
+.stickyicon-list a { 
+display: block; 
+text-align: center; 
+padding: 8px; 
+transition: all 0.5s ease; 
+color: white; 
+font-size: 20px; 
+}       
+/* HOver affect on sticky social media icons */ 
+.stickyicon-list a:hover { 
+color: #000; 
+width:10px; 
+} 
+ 
+/* Now we have to design each icon of social media */       
+.facebook { 
+background: #3b5998; 
+color: white;
+}       
+.twitter { 
+color: white; 
+background: #00acee; 
+} 
+.linkedin { 
+background: #0e76a8; 
+color: white; 
+}       
+.google { 
+color: white; 
+background: #db4a39; 
+} 
+.instagram { 
+background: #3f729b; 
+color: white; 
+}       
+.youtube { 
+color: white; 
+background: #c4302b;  
+} 
+.right p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.right h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+/* EDUCATION 
+
+body .title{
+    width:100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+/* SKILL */
+
+.skill{
+    list-style: none;
+    background-color: black;
+    width: 500px;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.skill h1{
+    text-align: center;
+}
+.skill li h3{
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.css{
+    width: 80%;
+    animation: css 3s;
+}
+.js{
+    width: 70%;
+    animation: js 3s;
+}
+.php{
+    width: 60%;
+    animation: php 3s;
+}
+.py{
+    width: 75%;
+    animation: py 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes py{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+/* Contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 50px 25px;
+}
+.input{
+    padding: 40px;
+    margin: 20px;
+    width: 70%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 50%;
+    padding: 20px;
+    margin: 30px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 20%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+.contact header{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: larger;
+}
